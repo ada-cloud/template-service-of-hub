@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "node node_modules/ada-cloud-util/build/develop || true",
+    "publish": "node node_modules/ada-cloud-util/build/index.js || true",
+    "start": "DEBUG=ADA* node node_modules/ada-cloud-util/build/publish || true"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ada-next/app-service-hub.git"
